@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #eae8de;
+  background: #10251d;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { margin: 0; }
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: clamp(3.5rem, 8vw, 8rem);
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1.15;
+}
+
+p {
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+.progress-label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 18px 5%;
+  z-index: 50;
+  font-size: 11px;
+  letter-spacing: 3px;
+  background: rgba(16,37,29,.8);
+  backdrop-filter: blur(12px);
+}
+
+.hero, .ending {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding: 8%;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  background-image:
+    linear-gradient(90deg,rgba(0,0,0,.75),transparent),
+    url('/forest.jpg');
+}
+
+.hero-content { max-width: 850px; }
+
+.hero-content > div > p {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.eyebrow {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c77d42;
+}
+
+.scroll-hint {
+  display: block;
+  margin-top: 70px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.story-section {
+  min-height: 90svh;
+  padding: 120px max(8%, calc((100% - 1100px)/2));
+  display: flex;
+  align-items: center;
+}
+
+.story-section > div { width: 100%; }
+
+.light {
+  background: #eae8de;
+  color: #10251d;
+}
+
+.dark, .detective-section {
+  background: #10251d;
+  color: #eae8de;
+}
+
+.image-frame, .comparison {
+  margin-top: 40px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comparison { position: relative; }
+
+.comparison > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comparison input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+}
+
+.divider-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: white;
+  pointer-events: none;
+}
+
+.image-label {
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  background: rgba(0,0,0,.65);
+  padding: 7px 12px;
+  font-size: 11px;
+}
+
+.image-label.left { left: 15px; }
+.image-label.right { right: 15px; }
+
+.controls, .hypotheses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.controls button, .hypotheses button {
+  padding: 12px 20px;
+  border: 1px solid #768d91;
+  border-radius: 4px;
+  color: inherit;
+  background: transparent;
+}
+
+.controls .selected,
+.hypotheses .selected {
+  background: #c77d42;
+  border-color: #c77d42;
+  color: #10251d;
+}
+
+.clue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 35px 0;
+}
+
+.clue {
+  background: #1c382c;
+  color: white;
+  border: 1px solid #365344;
+  padding: 25px;
+  text-align: left;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 155px;
+}
+
+.clue span, .clue small {
+  color: #aabcb1;
+  font-size: 12px;
+}
+
+.primary-button {
+  background: #c77d42;
+  color: #10251d;
+  border: none;
+  padding: 16px 25px;
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+.result {
+  padding: 25px;
+  margin-top: 30px;
+  background: #1c382c;
+  border-left: 3px solid #c77d42;
+}
+
+.regional-map {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.ending {
+  background-image:
+    linear-gradient(90deg,rgba(0,0,0,.85),rgba(0,0,0,.2)),
+    url('/singapore.jpg');
+}
+
+.ending-line {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #e8b17d;
+}
+
+.disclaimer {
+  font-size: 12px;
+  opacity: .7;
+}
+
+footer {
+  padding: 50px 8%;
+  font-size: 12px;
+  color: #aabcb1;
+}
+
+@media (max-width: 700px) {
+  .hero, .ending { padding: 25px; }
+
+  .story-section {
+    padding: 100px 25px;
+    min-height: auto;
+  }
+
+  .clue-grid { grid-template-columns: 1fr; }
+
+  .comparison, .image-frame {
+    aspect-ratio: 4 / 3;
+  }
+
+  .progress-label { font-size: 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
