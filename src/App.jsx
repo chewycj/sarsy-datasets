@@ -2,6 +2,8 @@ import { hero, steps, tombstone, compare, outro } from "./content";
 import { useActiveStep, useReadProgress } from "./useActiveStep";
 import Swipe from "./Swipe";
 import "./styles.css";
+import HimawariScrolly from "./HimawariScrolly";
+import { himawari } from "./himawariContent";
 
 function Hero() {
   return (
@@ -70,6 +72,7 @@ export default function App() {
     <>
       <div className="progress" style={{ transform: `scaleX(${progress})` }} />
       <Hero />
+      <HimawariScrolly {...himawari} />
       <Scrolly />
       <section className="block">
         <Swipe {...compare} />
