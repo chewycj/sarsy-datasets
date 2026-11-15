@@ -3,7 +3,7 @@
 .oc__head h2 { font: 700 clamp(1.8rem, 4vw, 2.8rem)/1.1 var(--serif); margin: 0 0 0.8rem; }
 .oc__head p { max-width: 42rem; font: 400 1.15rem/1.55 var(--serif); opacity: 0.85; margin: 0 0 2rem; }
 
-.oc__body { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+.oc__body { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
 .oc__fig { margin: 0; }
 
 /* slider */
@@ -31,6 +31,7 @@
 .oc__card h3 { margin: 0 0 0.8rem; font: 700 0.75rem/1 var(--sans); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ember); }
 
 .oc__bands, .oc__legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.7rem; }
+.oc__legend { grid-template-columns: 1fr 1fr; gap: 0.9rem 1.2rem; } 
 .oc__bands li, .oc__legend li { display: grid; grid-template-columns: auto 1fr; gap: 0.75rem; align-items: start; }
 .oc__bands b, .oc__legend b { font-weight: 700; }
 .oc__bands span { opacity: 0.85; }
@@ -45,9 +46,30 @@
 
 .oc__warn { margin: 0; padding: 0.8rem 1rem; border-left: 3px solid var(--ember); background: rgba(255,106,43,0.1); font-size: 0.9rem; line-height: 1.45; }
 
+@media (max-width: 1100px) {
+  .oc__legend { grid-template-columns: 1fr; }
+}
 @media (max-width: 860px) {
   .oc__body { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
   .oc__mode, .oc__toggle button { transition: none; }
 }
+
+/* radar slider: wider info panel so it needs less vertical space */
+.oc--sar .oc__body { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
+.oc--sar .oc__legend { grid-template-columns: 1fr 1fr; gap: 0.9rem 1.2rem; }
+@media (max-width: 1100px) {
+  .oc--sar .oc__legend { grid-template-columns: 1fr; }
+}
+@media (max-width: 860px) {
+  .oc--sar .oc__body { grid-template-columns: 1fr; }
+}
+
+
+/* intro text above the NDVI / true colour slider */
+.oc-intro { max-width: 74rem; margin: 0 auto; padding: 6rem 1.25rem 0; }
+.oc-intro p { max-width: 46rem; margin: 0 auto; font: 400 clamp(1.25rem, 2.6vw, 1.7rem)/1.5 var(--serif); opacity: 0.92; }
+
+/* intro that follows another slider: the slider above already leaves a big gap */
+.oc-intro--follow { padding-top: 0; }
