@@ -17,7 +17,7 @@ export default function OpticalCompare({
   intro,
   beforeLabel,
   afterLabel,
-  aspect = "1320 / 1405",
+  aspect = "1320  / 1405", //1320 /1405
   modes,
   credit,
 }) {
