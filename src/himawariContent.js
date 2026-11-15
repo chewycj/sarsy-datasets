@@ -27,26 +27,26 @@ export const himawari = {
   // order, and against NASA FIRMS hotspots and NEA PSI, before you submit.
   steps: [
     {
-      kicker: "The region",
-      text: "Sumatra on the left, Borneo on the right, the Strait in between.",
+      kicker: "Region",
+      text: "Sumatra on the left, Borneo on the right, and the Strait lies in between.",
       frame: 0,
       view: { lon: 108.5, lat: 0.8, zoom: 1.0 },
     },
     {
-      kicker: "The source",
+      kicker: "Source",
       text: "A grey-brown plume builds over Kalimantan in Borneo.",
       frame: 4,
       view: { lon: 113.5, lat: -2.5, zoom: 2.2 },
     },
     {
-      kicker: "The drift",
-      text: "The smoke streams west along the coast, across the sea towards Sumatra and the Malay Peninsula.",
+      kicker: "Drift",
+      text: "It streams west along the coast, across the sea towards Sumatra and the Malay Peninsula.",
       frame: 9,
       view: { lon: 108.0, lat: -1.0, zoom: 1.7 },
     },
     {
       kicker: "Arrival",
-      text: "Worsened air quality in South-east Asia, with the haze visible from space.",
+      text: "Air quality worsens in South-east Asia - the haze is even visible from space.",
       frame: 13,
       view: { lon: 103.8, lat: 1.3, zoom: 2.4 },
     },
