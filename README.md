@@ -4,7 +4,7 @@ A scrollytelling story about the Indonesian peatland fires that cause haze acros
 
 Try out the project: [https://chewycj.github.io/sarsy-datasets/](https://chewycj.github.io/sarsy-datasets/)
 
-Team: Ke Xuan and Chun Jia
+Team: Kexuan and Chun Jia, from Singapore!
 
 ## What it shows
 
