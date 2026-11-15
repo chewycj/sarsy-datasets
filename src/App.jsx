@@ -5,6 +5,8 @@ import "./styles.css";
 import HimawariScrolly from "./HimawariScrolly";
 import { himawari } from "./himawariContent";
 import "./himawari.css";
+import OpticalCompare from "./OpticalCompare";
+import { opticalCompare } from "./opticalContent";
 
 function Hero() {
   return (
@@ -74,6 +76,9 @@ export default function App() {
       <div className="progress" style={{ transform: `scaleX(${progress})` }} />
       <Hero />
       <HimawariScrolly {...himawari} />
+      <section className="block">
+        <OpticalCompare {...opticalCompare} />
+      </section>
       <Scrolly />
       <section className="block">
         <Swipe {...compare} />
