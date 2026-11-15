@@ -46,7 +46,7 @@ body { margin: 0; background: var(--ash); color: var(--ink); font-family: var(--
   opacity: 0.25; transform: translateY(14px); transition: opacity 0.6s, transform 0.6s; }
 .card.is-on { opacity: 1; transform: none; }
 .card p { margin: 0; white-space: pre-line; }
-.card .kicker { font-size: 0.7rem; }
+.card .kicker { font-size: 0.8rem; }
 
 .tomb { position: absolute; left: 50%; bottom: 12%; transform: translateX(-50%); text-align: center; font-family: var(--serif); animation: rise 1.2s ease both; }
 .tomb span { display: block; font-size: 1.1rem; opacity: 0.8; }

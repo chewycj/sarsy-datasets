@@ -28,13 +28,13 @@ export const himawari = {
   steps: [
     {
       kicker: "The region",
-      text: "TODO: set the scene in one line, with the date. Sumatra on the left, Borneo on the right, the Strait in between.",
+      text: "Sumatra on the left, Borneo on the right, the Strait in between.",
       frame: 0,
       view: { lon: 108.5, lat: 0.8, zoom: 1.0 },
     },
     {
       kicker: "The source",
-      text: "A grey-brown plume builds over southern Kalimantan. TODO: confirm with FIRMS hotspots that fires are burning here.",
+      text: "A grey-brown plume builds over Kalimantan in Borneo.",
       frame: 4,
       view: { lon: 113.5, lat: -2.5, zoom: 2.2 },
     },
@@ -46,7 +46,7 @@ export const himawari = {
     },
     {
       kicker: "Arrival",
-      text: "TODO: say what the last frames show near Singapore, and back it with the NEA PSI reading for that time.",
+      text: "Worsened air quality in South-east Asia, with the haze visible from space.",
       frame: 13,
       view: { lon: 103.8, lat: 1.3, zoom: 2.4 },
     },

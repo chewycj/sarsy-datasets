@@ -14,21 +14,21 @@ export const steps = [
   {
     id: "sg",
     kicker: "(Not so) Blanketed in grey",
-    text: "Scientists can use the data to monitor vegatation changes, without being affected by cloud or smoke cover.", 
+    text: "Scientists can use the data to monitor vegatation changes, without being affected by cloud or smoke cover. Better land planning and mitigation can be done to protect the environment and the people who live there.", 
     bg: { src: null, gradient: "linear-gradient(180deg,#8a8f94,#c9c3b8)" },
     haze: 0.75,
   },
   {
     id: "wind",
     kicker: "Different forces at play",
-    text: "The strong 'Godzilla' El Nino has brought severe weather patterns. Seasonal winds carry the smoke across the Strait. The source is more than a thousand kilometres away.", // [VERIFY distance for your chosen fire area]
+    text: "The strong 'Godzilla' El Nino has brought about drier conditions, which causes peatlands (or wetlands that will be dried to make way for agriculture) to become more susceptible to fires, especially those nearby concession areas where palm oil companies are allowed to operate and grow crops. Seasonal winds carry the haze across the Strait.", 
     bg: { src: null, gradient: "linear-gradient(180deg,#5b5f66,#a39a8a)" },
     haze: 0.55,
   },
   {
     id: "peat",
     kicker: "Into the fray",
-    text: "=Exploitation can still be done through legal loopholes. The clearing of forests continues to be done annually, the main driver being the demand for agricultural land and commercialdevelopment.",
+    text: "Exploitation can still be done through legal loopholes. The clearing of forests continues to be done annually, the main driver being the demand for agricultural land and commercialdevelopment.",
     bg: { src: null, gradient: "linear-gradient(180deg,#2f3a2a,#6b5a3a)" },
     haze: 0.25,
   },
