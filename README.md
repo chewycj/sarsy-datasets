@@ -3,6 +3,7 @@
 A scrollytelling story about the Indonesian peatland fires that cause haze across Southeast Asia, told with optical satellite data and NISAR radar data. Built for NASA Space Apps 2026.
 
 Try out the project: [https://chewycj.github.io/sarsy-datasets/](https://chewycj.github.io/sarsy-datasets/)
+Project Demo Video: [https://youtu.be/xCLWu5po73s]([url](https://youtu.be/xCLWu5po73s))
 
 Team: Kexuan and Chun Jia, from Singapore!
 
