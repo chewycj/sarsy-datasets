@@ -5,7 +5,7 @@ export const himawari = {
   credit: "Himawari imagery: JAXA Himawari Monitor (P-Tree) / Japan Meteorological Agency",
 
   frames: {
-    pattern: "img/himawari/f_{n}.webp", // public/img/himawari/f_001.webp ... f_014.webp
+    pattern: "/img/himawari/f_{n}.webp", // public/img/himawari/f_001.webp ... f_014.webp
     count: 14,
     first: 1,
     pad: 3,

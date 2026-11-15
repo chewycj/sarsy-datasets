@@ -14,8 +14,8 @@ export const opticalCompare = {
     {
       id: "ndvi",
       label: "NDVI",
-      before: { src: "img/optical/ndvi-may.png" },
-      after: { src: "img/optical/ndvi-nov.png" },
+      before: { src: "/img/optical/ndvi-may.png" },
+      after: { src: "/img/optical/ndvi-nov.png" },
       caption: "NDVI: a score for how much healthy green vegetation each pixel contains.",
       bands: {
         // Sentinel-2 bands. TODO: if your imagery is Landsat 8/9, use B5 (NIR) and B4 (Red) instead.
@@ -44,8 +44,8 @@ export const opticalCompare = {
     {
       id: "true",
       label: "True colour",
-      before: { src: "img/optical/true-may.png" },
-      after: { src: "img/optical/true-nov.png" },
+      before: { src: "/img/optical/true-may.png" },
+      after: { src: "/img/optical/true-nov.png" },
       caption: "True colour: close to what your eyes would see from orbit.",
       bands: {
         items: [
