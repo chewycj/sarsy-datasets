@@ -28,7 +28,7 @@ export const steps = [
   {
     id: "peat",
     kicker: "Into the fray",
-    text: "Exploitation can still be done through legal loopholes. The clearing of forests continues to be done annually, the main driver being the demand for agricultural land and commercialdevelopment.",
+    text: "Exploitation can still be done through legal loopholes. The clearing of plantations through biomass burning continues to be done annually, the main driver being the demand for agricultural land and commercial development.",
     bg: { src: null, gradient: "linear-gradient(180deg,#2f3a2a,#6b5a3a)" },
     haze: 0.25,
   },
@@ -68,6 +68,7 @@ export const outro = {
   sources: [
     { label: "NISAR data via ASF DAAC / NASA Earthdata", url: "https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/nisar" },
     { label: "Fire in Kalimantan's peatlands over two decades (Frontiers)", url: "https://public-pages-files-2025.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2024.1221797/xml" },
+    { label: "Cloaked in grey: The causes and effects of haze in Singapore", url: "https://www.straitstimes.com/singapore/environment/cloaked-in-grey-the-causes-and-effects-of-haze-in-singapore" },
     // TODO add: hotspot data (NASA FIRMS), Singapore NEA PSI, GFW concessions
   ],
 };
