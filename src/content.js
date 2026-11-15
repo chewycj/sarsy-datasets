@@ -5,8 +5,8 @@
 export const hero = {
   kicker: "NISAR · Borneo · Singapore",
   title: "The smoke has a source.",
-  dek: "Every dry season the sky over Southeast Asia turns grey. Follow the haze back to where it starts, and see it with a radar that smoke can't hide from.",
-  byline: "Team name · NASA Space Apps 2026", // TODO
+  dek: "Every dry season, the sky over Southeast Asia turns grey. Let's follow the haze back to where it starts, and see it with a radar that smoke can't hide from.",
+  byline: "SARsy Datasets · NASA Space Apps 2026", // TODOz
 };
 
 // Scrolly steps. `haze` (0 to 1) controls how thick the smoke overlay is on that step.
