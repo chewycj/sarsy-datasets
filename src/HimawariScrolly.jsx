@@ -3,6 +3,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
 const lerp = (a, b, t) => a + (b - a) * t;
 const ease = (t) => t * t * (3 - 2 * t);
+const LEAD = 0.05; // how early the map starts moving, as a fraction of screen height
 
 const frameUrl = (frames, i) =>
   frames.pattern.replace("{n}", String(i + (frames.first ?? 1)).padStart(frames.pad ?? 3, "0"));
@@ -44,6 +45,7 @@ export default function HimawariScrolly({ frames, bbox, pins = [], steps, credit
   const imgs = useRef([]);
   const dims = useRef(null);
   const pRef = useRef(0);
+  const activeRef = useRef(0);
   const [loaded, setLoaded] = useState(0);
   const [active, setActive] = useState(0);
   const [label, setLabel] = useState("");
@@ -127,7 +129,7 @@ export default function HimawariScrolly({ frames, bbox, pins = [], steps, credit
       });
     }
 
-    setActive(Math.round(sp));
+    setActive(Math.round(activeRef.current * (S - 1)));
     // no timestamps supplied yet -> hide the label instead of showing a wrong date
     setLabel(
       frames.times || frames.start
@@ -180,7 +182,9 @@ export default function HimawariScrolly({ frames, bbox, pins = [], steps, credit
       if (!el) return;
       const r = el.getBoundingClientRect();
       const total = r.height - window.innerHeight;
-      pRef.current = total > 0 ? clamp(-r.top / total) : 0;
+      const lead = LEAD * window.innerHeight;
+      pRef.current = total > 0 ? clamp((-r.top + lead) / total) : 0;
+      activeRef.current = total > 0 ? clamp(-r.top / total) : 0;      
       draw();
     };
     const onScroll = () => {
