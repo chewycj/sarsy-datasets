@@ -35,8 +35,7 @@ npm run preview
 
 - NISAR L-band data: NASA / ISRO, distributed by the Alaska Satellite Facility DAAC (ASF) and NASA Earthdata.
 - Himawari imagery: JAXA Himawari Monitor (P-Tree) / Japan Meteorological Agency.
-- Optical and NDVI imagery: TODO confirm sensor and credit (e.g. Contains modified Copernicus Sentinel data).
-- Other sources: TODO (e.g. NASA FIRMS hotspots, NEA Singapore PSI).
+- Optical and NDVI imagery: Contains modified Copernicus Sentinel-2 data.
 
 ## How the images were prepared
 
