@@ -50,8 +50,8 @@ export const steps = [
 
 // Closing "tombstone" card, an idea borrowed from the best scrolly stories: a named place with its years.
 export const tombstone = {
-  place: "Peat swamp forest, Central Kalimantan", // TODO real place name
-  years: "intact until 2026", // TODO
+  place: "Central Kalimantan", 
+  years: "Moving through 2026.",
 };
 
 // Before/after swipe. Replace with matching crops of the SAME area.
@@ -66,9 +66,10 @@ export const outro = {
   heading: "What NISAR changes",
   text: "Smoke season doesn't stop satellites that carry their own light. NISAR's radar gives scientists and communities a clear look at burn scars, drained peat and recovery, whatever the sky is doing.",
   sources: [
-    { label: "NISAR data via ASF DAAC / NASA Earthdata", url: "https://www.earthdata.nasa.gov/data/platforms/space-based-platforms/nisar" },
+    { label: "Data from NISAR Validated Geocoded Single Look Complex Product (Version 1)", url: "https://www.earthdata.nasa.gov/data/catalog/asf-nisar-l2-gslc-v1-1" },
     { label: "Fire in Kalimantan's peatlands over two decades (Frontiers)", url: "https://public-pages-files-2025.frontiersin.org/journals/forests-and-global-change/articles/10.3389/ffgc.2024.1221797/xml" },
-    { label: "Cloaked in grey: The causes and effects of haze in Singapore", url: "https://www.straitstimes.com/singapore/environment/cloaked-in-grey-the-causes-and-effects-of-haze-in-singapore" },
+    { label: "Article: Indonesia’s forest fires: A wake-up call for climate governance", url: "https://www.ids.ac.uk/opinions/indonesias-forest-fires-a-wake-up-call-for-climate-governance/" },
+
     // TODO add: hotspot data (NASA FIRMS), Singapore NEA PSI, GFW concessions
   ],
 };
