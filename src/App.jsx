@@ -4,6 +4,7 @@ import Swipe from "./Swipe";
 import "./styles.css";
 import HimawariScrolly from "./HimawariScrolly";
 import { himawari } from "./himawariContent";
+import "./himawari.css";
 
 function Hero() {
   return (
