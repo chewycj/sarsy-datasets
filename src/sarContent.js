@@ -8,8 +8,8 @@ export const sarCompare = {
   afterLabel: "Oct",
   aspect: "1478 / 1267", // matches the June image. The October one is nearly identical, so it fits cleanly
 
-  before: { src: "/img/sar/jun_sar.png" },
-  after: { src: "/img/sar/oct_sar.png" },
+  before: { src: "img/sar/jun_sar.png" },
+  after: { src: "img/sar/oct_sar.png" },
 
   caption: "NISAR L-band radar, June and October. Drag the slider to compare. The view is clear in both months, even with smoke overhead.",
   credit: "Contains NISAR data via ASF DAAC / NASA Earthdata.", // TODO confirm the exact credit wording
