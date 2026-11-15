@@ -6,7 +6,11 @@ import HimawariScrolly from "./HimawariScrolly";
 import { himawari } from "./himawariContent";
 import "./himawari.css";
 import OpticalCompare from "./OpticalCompare";
-import { opticalCompare } from "./opticalContent";
+import OpticalIntro from "./OpticalIntro";
+import { opticalCompare, opticalIntro } from "./opticalContent";
+import SarCompare from "./SarCompare";
+import SarIntro from "./SarIntro";
+import { sarCompare, sarIntro } from "./sarContent";
 
 function Hero() {
   return (
@@ -76,13 +80,18 @@ export default function App() {
       <div className="progress" style={{ transform: `scaleX(${progress})` }} />
       <Hero />
       <HimawariScrolly {...himawari} />
+      <OpticalIntro text={opticalIntro} />
       <section className="block">
         <OpticalCompare {...opticalCompare} />
       </section>
-      <Scrolly />
+      <SarIntro text={sarIntro} />
       <section className="block">
-        <Swipe {...compare} />
+        <SarCompare {...sarCompare} />
       </section>
+      <Scrolly />
+      {/* <section className="block">
+        <Swipe {...compare} />
+      </section> */}
       <section className="block block--text">
         <h2>{outro.heading}</h2>
         <p>{outro.text}</p>
