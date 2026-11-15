@@ -1,16 +1,45 @@
-# React + Vite
+# Project SARsy datasets
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A scrollytelling story about the Indonesian peatland fires that cause haze across Southeast Asia, told with optical satellite data and NISAR radar data. Built for NASA Space Apps 2026.
 
-Currently, two official plugins are available:
+## What it shows
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. **The sky:** JAXA Himawari imagery of smoke drifting from Kalimantan towards Singapore.
+2. **The ground in optical:** January vs October, as NDVI and true colour, with the bands and colours explained.
+3. **Through the smoke:** NISAR L-band radar over time, which sees through cloud and smoke.
+4. **Read the colours:** click the radar image to learn what each colour may mean.
 
-## React Compiler
+## Run it locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Requires Node 18 or newer.
 
-## Expanding the Oxlint configuration
+```
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Then open the address shown in the terminal.
+
+Build and preview the production version:
+
+```
+npm run build
+npm run preview
+```
+
+## Data and credits
+
+- NISAR L-band data: NASA / ISRO, distributed by the Alaska Satellite Facility DAAC (ASF) and NASA Earthdata.
+- Himawari imagery: JAXA Himawari Monitor (P-Tree) / Japan Meteorological Agency.
+- Optical and NDVI imagery: TODO confirm sensor and credit (e.g. Contains modified Copernicus Sentinel data).
+- Other sources: TODO (e.g. NASA FIRMS hotspots, NEA Singapore PSI).
+
+## How the images were prepared
+
+Himawari frames were captured with the same map view, then converted with `prep_frames.py`
+(resized to 960px wide WebP, numbered `f_001.webp`, `f_002.webp`, ...).
+
+## Tech
+
+React + Vite. No runtime dependencies beyond React. The scroll animations use plain browser APIs.
+
