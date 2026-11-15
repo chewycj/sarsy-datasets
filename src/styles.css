@@ -15,7 +15,9 @@ body { margin: 0; background: var(--ash); color: var(--ink); font-family: var(--
 
 /* HERO */
 .hero { position: relative; min-height: 100vh; display: grid; place-items: center; overflow: hidden;
-  background: radial-gradient(120% 90% at 50% 100%, #3a1d10 0%, var(--ash) 60%); }
+  background:
+    linear-gradient(rgba(20, 16, 14, 0.55), rgba(20, 16, 14, 0.75)),
+    center / cover no-repeat url("/singapore.jpg"); }
 .hero__smoke { position: absolute; inset: -20%; filter: blur(60px); opacity: 0.55;
   background: radial-gradient(40% 30% at 30% 60%, #7a6b5c, transparent 70%),
               radial-gradient(35% 30% at 70% 40%, #5c5148, transparent 70%);
