@@ -45,4 +45,4 @@ Himawari frames were captured with the same map view, then converted with `prep_
 ## Tech
 
 React + Vite. No runtime dependencies beyond React. The scroll animations use plain browser APIs.
-
+SI was used to generate code for this project.
