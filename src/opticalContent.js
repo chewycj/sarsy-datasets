@@ -1,3 +1,6 @@
+export const opticalIntro =
+  "Using Normalized Difference Vegetation Index (NDVI) and satellite imagery, we can see the changes in Central Kalimantan from mid-2026 to end-2026, as green vegetation turns to brown.";
+
 export const opticalCompare = {
   title: "Optical satellites: before and after",
   intro:
