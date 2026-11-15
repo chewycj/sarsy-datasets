@@ -120,7 +120,7 @@ export default function HimawariScrolly({ frames, bbox, pins = [], steps, credit
         ctx.lineWidth = 2 * dpr;
         ctx.strokeStyle = "#fff";
         ctx.stroke();
-        ctx.font = `600 ${13 * dpr}px system-ui, sans-serif`;
+        ctx.font = `600 ${20 * dpr}px system-ui, sans-serif`;
         ctx.shadowColor = "rgba(0,0,0,0.8)";
         ctx.shadowBlur = 4 * dpr;
         ctx.fillStyle = "#fff";

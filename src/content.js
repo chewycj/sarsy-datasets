@@ -13,36 +13,36 @@ export const hero = {
 export const steps = [
   {
     id: "sg",
-    kicker: "Singapore",
-    text: "It starts as a grey morning. Flights hold, schools stay indoors, and the PSI creeps up.", // TODO add real PSI / date you pick
+    kicker: "(Not so) Blanketed in grey",
+    text: "Scientists can use the data to monitor vegatation changes, without being affected by cloud or smoke cover.", 
     bg: { src: null, gradient: "linear-gradient(180deg,#8a8f94,#c9c3b8)" },
     haze: 0.75,
   },
   {
     id: "wind",
-    kicker: "The journey",
-    text: "Seasonal winds carry the smoke across the Strait. The source is more than a thousand kilometres away.", // [VERIFY distance for your chosen fire area]
+    kicker: "Different forces at play",
+    text: "The strong 'Godzilla' El Nino has brought severe weather patterns. Seasonal winds carry the smoke across the Strait. The source is more than a thousand kilometres away.", // [VERIFY distance for your chosen fire area]
     bg: { src: null, gradient: "linear-gradient(180deg,#5b5f66,#a39a8a)" },
     haze: 0.55,
   },
   {
     id: "peat",
-    kicker: "Kalimantan",
-    text: "Much of Borneo's forest floor is peat: centuries of carbon-rich, waterlogged plant matter. Drain it, and it becomes fuel.", // Sourced: Kalimantan holds ~45,000 km2 of tropical peatland (Frontiers in Forests & Global Change, 2024)
+    kicker: "Into the fray",
+    text: "=Exploitation can still be done through legal loopholes. The clearing of forests continues to be done annually, the main driver being the demand for agricultural land and commercialdevelopment.",
     bg: { src: null, gradient: "linear-gradient(180deg,#2f3a2a,#6b5a3a)" },
     haze: 0.25,
   },
   {
     id: "optical",
-    kicker: "Through a normal camera",
-    text: "In an optical image, the fire is a smudge. Smoke and cloud cover the very thing we want to measure.",
+    kicker: "No room for delay",
+    text: "The United Nations Office for Disaster Risk Reduction (UNDRR) emphasises that although hazards are natural, disasters can be man-made. \n\nThere is a need for robust policy frameworks, formulated using scientific evidence as above, to address the root causes of these disasters, with a future shift in focus to preventive action. The rich biodiversity and the daily lives of the people in the region are at stake, and the time to act is now.",
     bg: { src: null, gradient: "linear-gradient(180deg,#9a948a,#cfc8bb)" }, // TODO: optical image (Sentinel-2 / Landsat / MODIS)
-    haze: 0.9,
+    haze: 0
   },
   {
     id: "radar",
-    kicker: "Through NISAR",
-    text: "L-band radar passes through smoke and cloud, day or night. Here the burn scar appears with its structure intact.",
+    kicker: "An individual paves the way",
+    text: "As an individual, there are several tangible advocacy actions that can be taken. Support can be provided to frontline responders through donations to relief and firefighting groups, and consumers can support sustainable supply chains and brands committed to High Carbon Stock (HCS) and zero-deforestation policies.",
     bg: { src: null, gradient: "linear-gradient(180deg,#10151c,#22303f)" }, // TODO: NISAR backscatter image (HV or HH/HV composite)
     haze: 0,
   },

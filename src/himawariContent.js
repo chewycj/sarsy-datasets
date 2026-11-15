@@ -1,5 +1,4 @@
 // Content for the Himawari scrolly (section 2), set up for 14 frames.
-// Everything marked TODO needs YOUR real data.
 
 export const himawari = {
   // Required credit. Check JAXA's terms page for the exact wording you want to use.
@@ -18,8 +17,8 @@ export const himawari = {
   bbox: { west: 93.5, east: 123.7, south: -6.8, north: 8.1 },
 
   pins: [
-    { name: "Singapore", lon: 103.82, lat: 1.35 },
-    { name: "Study area, Central Kalimantan", lon: 113.2, lat: -2.5 }, // TODO match your NISAR scene
+    { name: "Singapore", lon: 103.6, lat: 1.28 },
+    { name: "Study area, Central Kalimantan", lon: 113.2, lat: -2.5 }, 
   ],
 
   // Cards are pinned to frame numbers (0 to 13) and a camera view (lon/lat centre + zoom >= 1).
