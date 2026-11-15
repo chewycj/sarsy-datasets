@@ -1,5 +1,9 @@
 # Project SARsy datasets
 
+<img width="285" height="290" alt="image" src="https://github.com/user-attachments/assets/0e67d43f-3bcc-42df-956b-d4cc5f3defc2" />
+
+
+
 A scrollytelling story about the Indonesian peatland fires that cause haze across Southeast Asia, told with optical satellite data and NISAR radar data. Built for NASA Space Apps 2026.
 
 Try out the project: [https://chewycj.github.io/sarsy-datasets/](https://chewycj.github.io/sarsy-datasets/)
